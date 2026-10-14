@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Customization - Zigboom Designs</title>
+<meta name="description" content="Customization - Personalize your Web Experience" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--<link rel="preconnect" href="https://ajax.googleapis.com" />
+	<link rel="preconnect" href="https://cdn2.editmysite.com" />-->
+	<link rel="preload" href="files/theme/files/fonts/titillium-web-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<!--	<link rel="preload" href="files/theme/files/images/organic-lines-360.webp" as="image" type="image/webp" media="(max-width: 420px)" fetchpriority="high"> -->
+<!--	<link rel="preload" href="files/theme/files/images/organic-lines.webp" as="image" type="image/webp" fetchpriority="high"> -->
+	<!--<link rel="preload" href="https://cdn2.editmysite.com/js/jquery-1.8.3.min.js" as="script" />
+	<link rel="preload" href="files/theme/scripts.js" as="script" />-->
+	<!--<link rel="preload" href="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" as="script" />-->
+	
+<style>
+/* titillium-web-regular - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('files/theme/files/fonts/titillium-web-v15-latin-regular.woff2') format('woff2');
+	   font-display: swap;
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+	max-width: 100%;
+	overscroll-behavior: none;
+}
+#nav ul li a {
+    display: block;
+    color: #ccc;
+    padding: 15px 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+body {
+  font: 16px/1 'Titillium Web', sans-serif; 
+  color: #aaa;
+  background-color: #000;
+  background-attachment: fixed; 
+  font-weight: normal;
+  background-size: cover !important;
+  -webkit-font-smoothing: antialiased;
+}
+#nav ul li a, #wsite-menus .wsite-menu li a, .galleryImageHolder .galleryCaptionInnerText, .wsite-form-input, .wsite-search-element-input, .form-select {
+	font-family: 'Titillium Web', sans-serif;
+}
+#banner-wrap, #nav-wrap, #main-wrap {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+#banner .wsite-section-elements {
+    padding-top: 10px;
+}
+h2, h1 {
+    font-size: 1.75em;
+    font-weight: 300;
+    color: #aaa;
+    margin: 0 auto .75em;
+    text-transform: uppercase;
+}
+#banner h2, #banner h1 {
+    color: #fff;
+    font-size: 3.85em;
+    font-weight: 300;
+    margin: 0 auto .35em;
+}
+.headerWrap {
+	height: 51px;
+}
+.nav-up {
+    top: -51px !important;
+}
+@media (max-width: 992px) {
+#banner h2, #banner h1 {
+    font-size: 3em;
+}
+}
+@media (max-width: 767px) {
+#banner h2, #banner h1 {
+    font-size: 1.8em;
+}
+}
+#logo, #nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+@media (max-width: 420px) {
+	/*#banner, */body {
+	background-image: url("files/theme/files/images/organic-lines-360.webp");
+	background-size: cover !important;
+	}
+}
+@media (min-width: 421px) {
+	#banner, body {
+	background-image: url("files/theme/files/images/organic-lines.webp");
+	background-size: cover !important;
+	}
+}
+
+.blueIcon {
+	filter: sepia(1) hue-rotate(180deg) saturate(3);
+	transition: filter 0.6s;
+}
+
+.blueIcon:hover, .blueIcon:active {
+	filter: sepia(1) hue-rotate(180deg) saturate(3) drop-shadow(0px 0px 10px #00b4ff);
+}
+
+/* sites.css used code coverage */
+/*
+img {
+    -ms-interpolation-mode: bicubic
+}
+
+::-webkit-input-placeholder {
+    color: #a9a9a9
+}
+
+@media (max-width: 767px) {
+  .wsite-button.wsite-button-large .wsite-button-inner {
+    padding: 12px 20px !important;
+	line-height: 1!important;
+	height: auto!important;
+  }
+  .wsite-button.wsite-button-large {
+  font-size: .875em !important;
+  }
+}
+
+.wsite-button {
+    display: inline-block;
+    padding: 0 15px 0 0;
+    text-decoration: none !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    color: #222 !important;
+    cursor: pointer
+}
+
+.wsite-button-inner {
+    float: left;
+    padding: 0 5px 0 20px;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap
+}
+
+.wsite-button-highlight {
+    color: #fff !important
+}
+
+.wsite-button-large {
+    font-size: 18px !important;
+}
+
+.wsite-button-large .wsite-button-inner {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px 0 25px;
+}
+
+wsite-search-element-align-center .wsite-search-element {
+    margin: auto
+}
+
+.wsite-search-element {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.wsite-search-element-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 15px
+}
+
+.wsite-search-element-submit {
+    background: none !important;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.wsite-search-element-submit:after {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 8px;
+    cursor: pointer;
+    content: "🔍";
+    filter: grayscale(1);
+}
+
+.wsite-logo {
+    display: inline-block;
+    vertical-align: top
+}
+
+.wsite-logo img,.wsite-logo span {
+    vertical-align: top !important
+}
+
+.wsite-logo a img {
+    border: 0
+}
+
+hr.styled-hr {
+    background-color: #eee;
+    background-color: rgba(0,0,0,0.13);
+    border: 0pt none;
+    color: #eee;
+    color: rgba(0,0,0,0.13);
+    height: 1px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.wsite-theme-dark hr.styled-hr {
+    background-color: #333;
+    background-color: rgba(255,255,255,0.13);
+    border: 0pt none;
+    color: #333;
+    color: rgba(255,255,255,0.13);
+    height: 1px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px -1px 1px rgba(0,0,0,0.3)
+}
+
+.wsite-not-footer {
+    text-align: left
+}
+
+.wsite-multicol {
+    position: relative;
+    direction: ltr
+}
+
+.wsite-multicol-table {
+    position: relative;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important
+}
+
+.wsite-multicol-col {
+    vertical-align: top;
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0;
+    -moz-box-sizing: border-box
+}
+
+.wsite-footer {
+    clear: both
+}
+
+h2,.wsite-content-title,.paragraph {
+    word-wrap: break-word
+}
+
+.wsite-section-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%
+}
+
+.wsite-section-wrap .wsite-section {
+    vertical-align: middle
+}
+
+.wsite-section-wrap:only-child .wsite-body-section {
+    height: 400px;
+    vertical-align: top
+}
+
+.wsite-section {
+    display: table-cell;
+    width: 100%;
+    height: 230px
+}
+
+.wsite-header-section {
+    text-align: center
+} */
+/* END of sites.css used code coverage */
+</style>
+
+
+		<meta http-equiv="Content-Security-Policy"
+content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn2.editmysite.com/js/jquery-1.8.3.min.js  https://www.zigboom.com/files/theme/scripts.js">
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.zigboom.com",
+      "logo": "https://www.zigboom.com/uploads/6/8/3/0/6830684/zigboom-logo.png"
+    }
+</script>
+
+
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/old/fancybox.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1783929309" title="wsite-theme-css" />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script src='files/templateArtifacts.js?1748143854'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn11.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "SG";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "545206286512749394";
+			com_userID = "6830684";</script><script type="text/javascript">_W.configDomain = "";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"263485303738933322","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"742431435181843648","title":"Web Design","url":"web-design.html","target":"","nav_menu":false,"nonclickable":false},{"id":"100712182281437847","title":"Website Speed","url":"website-speed.html","target":"","nav_menu":false,"nonclickable":false},{"id":"902378041718587622","title":"Browser Themes","url":"browser-themes.html","target":"","nav_menu":false,"nonclickable":false},{"id":"537527319989981955","title":"Customization","url":"customization.html","target":"","nav_menu":false,"nonclickable":false},{"id":"503352427273040173","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+			"537527319989981955",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		<meta name="google-translate-customization" content="ceab233a948ce50f-295b52d1f22bd447-g411cb0350fd47a02-f"></meta>
+		
+	</head>
+	<body class="header-page  wsite-theme-dark  wsite-page-customization full-width-on "><div id="banner-wrap">
+		<div id="header-wrap" class="headerWrap nav-down">
+			<div id="header" class="container">
+				<label id="nav-trigger" class="hamburger" for="mobile-input"><span></span></label>
+				<h1 id="logo">
+				<span class="wsite-logo">
+				<a href="">
+				<img width="300" height="21" src="uploads/6/8/3/0/6830684/zigboom-logo.webp" alt="Zigboom Designs" />
+				</a>
+				</span>
+				</h1>
+				<div id="nav"><ul class="wsite-menu-default">
+		<li id="pg263485303738933322" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg742431435181843648" class="wsite-menu-item-wrap">
+			<a
+						href="web-design.html"
+				class="wsite-menu-item"
+				>
+				Web Design
+			</a>
+			
+		</li>
+		<li id="pg100712182281437847" class="wsite-menu-item-wrap">
+			<a
+						href="website-speed.html"
+				class="wsite-menu-item"
+				>
+				Website Speed
+			</a>
+			
+		</li>
+		<li id="pg902378041718587622" class="wsite-menu-item-wrap">
+			<a
+						href="browser-themes.html"
+				class="wsite-menu-item"
+				>
+				Browser Themes
+			</a>
+			
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="customization.html"
+				class="wsite-menu-item"
+				>
+				Customization
+			</a>
+			
+		</li>
+		<li id="pg503352427273040173" class="wsite-menu-item-wrap">
+			<a
+						href="contact.html"
+				class="wsite-menu-item"
+				>
+				Contact
+			</a>
+			
+		</li>
+</ul>
+</div>
+			</div>
+			<div id="mobile-nav" class="container">
+				<ul class="wsite-menu-default">
+						<li id="pg263485303738933322" class="wsite-menu-item-wrap">
+							<a
+										href="index.html"
+								class="wsite-menu-item"
+								>
+								Home
+							</a>
+							
+						</li>
+						<li id="pg742431435181843648" class="wsite-menu-item-wrap">
+							<a
+										href="web-design.html"
+								class="wsite-menu-item"
+								>
+								Web Design
+							</a>
+							
+						</li>
+						<li id="pg100712182281437847" class="wsite-menu-item-wrap">
+							<a
+										href="website-speed.html"
+								class="wsite-menu-item"
+								>
+								Website Speed
+							</a>
+							
+						</li>
+						<li id="pg902378041718587622" class="wsite-menu-item-wrap">
+							<a
+										href="browser-themes.html"
+								class="wsite-menu-item"
+								>
+								Browser Themes
+							</a>
+							
+						</li>
+						<li id="active" class="wsite-menu-item-wrap">
+							<a
+										href="customization.html"
+								class="wsite-menu-item"
+								>
+								Customization
+							</a>
+							
+						</li>
+						<li id="pg503352427273040173" class="wsite-menu-item-wrap">
+							<a
+										href="contact.html"
+								class="wsite-menu-item"
+								>
+								Contact
+							</a>
+							
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section wsite-section-bg-color" style="background-color: #000000;background-image: none;is_customized: 1;" >
+		<div class="wsite-section-content">
+			
+			<div id="banner" class="container">
+				<div class="wsite-section-elements">
+					<div><div id="874315789656560025" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><style>
+#banner.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px 0px 0px;
+    box-sizing: border-box;
+	overflow: hidden;
+}
+</style>
+
+<video id="video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; background-size: cover;" autoplay muted loop playsinline>
+	<source src="files/theme/files/images/organic_lines_720.mp4" type="video/mp4">
+</video>
+
+<div class="wsite-section-content">
+<div class="container" style="max-width: 100%; padding-left: 3em; padding-right: 3em;">
+<div class="wsite-section-elements">
+<div style="height: 30px; overflow: hidden;"></div>
+<h1 class="wsite-content-title">Customization</h1>
+<div style="height: 10px; overflow: hidden;"></div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+</div>
+				</div>
+			</div>
+		
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+</div>
+
+	</div>
+
+	<div id="main-wrap">
+		<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-6"  >
+		<div class="wsite-section-content">
+			<div class="container">
+			<div class="wsite-section-elements">
+				<h2 class="wsite-content-title" style="text-align:left;">Customization - Personalize your Web Experience<br /></h2>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title" style="text-align:left;">User Styles<br /></h2>
+
+<div class="paragraph" style="text-align:left;"><span>The following User Styles compliment LavaFox and BlackFox, some tweak the User Interface and some re-design popular websites such as Google, YouTube, Facebook etc.</span><br /><br /><span>To apply User Styles:</span><ol><li>Install Stylus for <a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/" target="_blank">Firefox</a> /&nbsp;<a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/" target="_blank">Google Chrome</a>.</li><li>Install any of the following User Styles:</li></ol></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/43463/darker-google' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/3592668_1_orig.png" alt="Darker Google by Zigboom Designs" style="width:100%;max-width:700px" />
+</a>
+<div style="display:block;font-size:90%">Darker Google</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/18534/about-blank-lavafox-blackfox' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/9031626_1_orig.png" alt="about:blank - LavaFox & BlackFox by Zigboom Designs" style="width:100%;max-width:700px" />
+</a>
+<div style="display:block;font-size:90%">about:blank - LavaFox & BlackFox</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/82256/about-home-lavafox-blackfox-orion-s-belt' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/7411251_1_orig.jpeg" alt="about:home - LavaFox & BlackFox - Orion's Belt by Zigboom Designs" style="width:100%;max-width:1100px" />
+</a>
+<div style="display:block;font-size:90%">about:home - LavaFox & BlackFox - Orion's Belt</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/94506/darker-pirate-bay' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/94506-after_orig.png" alt="Darker Pirate Bay by Zigboom Designs" style="width:100%;max-width:817px" />
+</a>
+<div style="display:block;font-size:90%">Darker Pirate Bay</div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/65122/about-blank-lavafox-blackfox-orion-s-belt' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/7804367_1_orig.png" alt="about:blank - LavaFox & BlackFox - Orion's Belt by Zigboom Designs" style="width:100%;max-width:700px" />
+</a>
+<div style="display:block;font-size:90%">about:blank - LavaFox & BlackFox - Orion's Belt</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/26913/darker-imdb' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/958288_1_orig.jpeg" alt="Darker IMDb by Zigboom Designs" style="width:100%;max-width:1010px" />
+</a>
+<div style="display:block;font-size:90%">Darker IMDb</div>
+</div></div>
+
+
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='https://userstyles.org/styles/164588/darker-wired' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/164588-after_orig.jpeg" alt="Darker Outlook.com by Zigboom Designs" style="width:100%;max-width:1033px" />
+</a>
+<div style="display:block;font-size:90%">Darker WIRED</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='https://userstyles.org/styles/46651/darker-gizmodo' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/6628326_1_orig.jpeg" alt="Darker Gawker by Zigboom Designs" style="width:100%;max-width:1100px" />
+</a>
+<div style="display:block;font-size:90%">Darker Gizmodo</div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/100480/darker-facebook' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/fb6-r_orig.png" alt="Darker Facebook by Zigboom Designs" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Darker Facebook</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a href='http://userstyles.org/styles/48958/about-home-lavafox-blackfox' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/2737214_1_orig.png" alt="about:home - LavaFox & BlackFox by Zigboom Designs" style="width:100%;max-width:700px" />
+</a>
+<div style="display:block;font-size:90%">about:home - LavaFox & BlackFox</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='https://userstyles.org/styles/147575/darker-engadget' target='_blank'>
+<img src="uploads/6/8/3/0/6830684/147575-after_orig.jpeg" alt="Darker Netflix by Zigboom Designs" style="width:100%;max-width:900px" />
+</a>
+<div style="display:block;font-size:90%">Darker Engadget</div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div style="height: 40px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 40px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title">PortableApps.com Themes</h2>
+
+<div class="paragraph">DefaultDarker is a dark &amp; modern PortableApps.com Theme that is matching the Win10 dark theme.</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:30px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="files/theme/files/images/default-darker.jpg" alt="PortableApps.com Theme - DefaultDarker by Zigboom Designs" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><strong>Installation:</strong> navigate to&nbsp;PortableApps\PortableApps.com\App\Graphics\Themes\&nbsp;<br /><br />Backup and then replace the&nbsp;DefaultDark folder with the downloaded folder - link below (unzip it first).<br />&#8203;<br />Choose Default Dark from PortableApps.com / Settings / Themes.</div>
+
+<div><div style="margin: 10px 0 0 -10px">
+<a title="Download file: defaultdarker.zip" href="uploads/6/8/3/0/6830684/defaultdarker.zip"><img src="http://www.weebly.com/weebly/images/file_icons/gz.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" /></a><div style="float: left; text-align: left; position: relative;"><table style="font-size: 12px; font-family: tahoma; line-height: .9;"><tr><td colspan="2"><b> defaultdarker.zip</b></td></tr><tr style="display: none;"><td>File Size:  </td><td>30 kb</td></tr><tr style="display: none;"><td>File Type:  </td><td> zip</td></tr></table><a title="Download file: defaultdarker.zip" href="uploads/6/8/3/0/6830684/defaultdarker.zip" style="font-weight: bold;">Download File</a></div>
+</div>
+
+<hr style="clear: both; width: 100%; visibility: hidden"></hr></div>
+
+<div style="text-align:center;"><div style="height: 30px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QDJX7N576S66Q" target="_blank">
+<span class="wsite-button-inner">Donate - Support Free Development</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+			</div>
+		</div>
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+	</div>
+
+	<div id="footer-wrap">
+		<div class="container"><div class='wsite-elements wsite-footer'>
+<div><div id="108493592420102275" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a href="https://www.facebook.com/ZigboomDesigns" target="_blank">
+<img class="blueIcon" width="48" height="48" src="files/theme/files/images/f_logo_White_64.png" loading="lazy" alt="Zigboom Designs Facebook Page" style="width: 48px; height: 48px;">
+</a>
+
+<!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FZigboomDesigns&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=391794430844285" loading="lazy" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>--></div>
+
+
+
+</div>
+
+<div style="text-align:center;"><div style="height: 20px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-highlight" href="contact.html" >
+<span class="wsite-button-inner">Contact Us</span>
+</a>
+<div style="height: 0px; overflow: hidden;"></div></div>
+
+<div class="wsite-search-element-outer"><div class="wsite-search-element-align-center" style="padding: 20px 0 20px 0">
+  <form class="wsite-search-element-form" action="/apps/search" method="get">
+    <div class="wsite-search-element">
+      <input class="wsite-input wsite-search-element-input" type="text" name="q" placeholder="Search" autocomplete="off" aria-label="Search" />
+      <span class="wsite-search-element-submit" title="Search"></span>
+    </div>
+  </form>
+</div></div>
+
+<div><div style="height: 10px; overflow: hidden; width: 0px;"></div>
+<hr class="styled-hr" style="width:0px;"></hr>
+<div style="height: 10px; overflow: hidden; width: 0px;"></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><span style="color:rgb(153, 153, 153); font-weight:400"><span style="color:rgb(153, 153, 153); font-weight:400"><span style="color:rgb(153, 153, 153); font-weight:400"><span style="color:rgb(153, 153, 153); font-weight:400">Zigboom Designs &copy; 2009-2025</span></span></span></span></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><a href="web-design.html">Web Design</a><span style="color:rgb(153, 153, 153)">&nbsp;|&nbsp;</span><a href="privacy.html">Privacy Policy</a></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div></div></div>
+	</div>
+
+<!--<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-wrap").style.top = "0";
+  } else {
+    document.getElementById("header-wrap").style.top = "-51px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>-->
+
+<div style='display:none'><span id="wsite-title">Zigboom Designs</span></div>
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn11.editmysite.com/js/site/main-customer-accounts-site.js?buildtime=1234"></script>
+
+		<!--<script data-cfasync="false">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('q 3(9,6){a b=(6=="2")?"p":(6=="4")?"l":"d",7=(6=="2")?"k":(6=="4")?"h":"d",5=f.g(b);j(a i=5.m;i>=0;i--){n(5[i]&&5[i].e(7)!=o&&5[i].e(7).r(9)!=-1)5[i].E.D(5[i])}}3("8-C-B-z.2","2");3("8-c-s.2","2");3("c-y.2","2");3("x.2","2");3("w.2","2");3("8.2","2");3("v.4","4");3("u.4","4");3("t-A.4","4");',41,41,'||js|removejscssfile|css|allsuspects|filetype|targetattr|main|filename|var|targetelement|commerce|none|getAttribute|document|getElementsByTagName|href||for|src|link|length|if|null|script|function|indexOf|browse|social|fancybox|sites|templateArtifacts|stl|core|site|icons|accounts|customer|removeChild|parentNode'.split('|'),0,{}))
+</script>-->
+
+<script>
+var didScroll,lastScrollTop=0,delta=5,navbarHeight=$('.headerWrap').outerHeight();$(window).scroll(function(event){didScroll=true});setInterval(function(){if(didScroll){hasScrolled();didScroll=false}},250);function hasScrolled(){var st=$(this).scrollTop();if(Math.abs(lastScrollTop-st)<=delta)return;if(st>lastScrollTop&&st>navbarHeight){$('.headerWrap').removeClass('nav-down').addClass('nav-up')}else{if(st+$(window).height()<$(document).height()){$('.headerWrap').removeClass('nav-up').addClass('nav-down')}}lastScrollTop=st}
+</script>
+
+<!--<script async src="files/theme/main.js"></script>-->
+<script async src="files/theme/scripts.js"></script>
+
+	</body>
+</html>
